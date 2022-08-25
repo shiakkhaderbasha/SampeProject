@@ -2,4 +2,13 @@ class sampleprogram{
 public static void main(String[])
 {
 System.out.println("hello world");
-}}
+Scanner sc = new Scanner(System.in);
+String data = sc.nextLine();
+char ch = data.tocharArray();
+for(int i =0;i<ch.lenght/2;i++)
+{
+  int temp = ch[i];
+  ch[i]=ch[ch.length-1-i];
+  ch[ch.length-1-i]=temp;
+}
+}
